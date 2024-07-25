@@ -197,6 +197,8 @@ class MasterPricerTravelBoardSearch extends BaseMasterPricerMessage
      */
     protected function loadItinerary($opt, &$counter)
     {
+        if (!$opt instanceof MPItinerary) return;
+        
         $segmentRef = $counter;
 
         if (!empty($opt->segmentReference)) {
