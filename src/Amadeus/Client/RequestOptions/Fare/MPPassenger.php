@@ -36,6 +36,8 @@ class MPPassenger extends LoadParamsFromArray
 
     const TYPE_CHILD = "CH";
 
+    const TYPE_CHILD_NEW = "CNN";
+
     const TYPE_INFANT = "INF";
 
     const TYPE_INFANT_WITH_SEAT = "INS";
