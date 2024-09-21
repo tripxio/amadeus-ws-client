@@ -62,7 +62,7 @@ class SellFromRecommendation extends BaseWsMessage
         $this->messageActionDetails->messageFunctionDetails->additionalMessageFunction = $options->algorithm;
 
         foreach ($options->itinerary as $itinerary) {
-            if ($itinerary instanceof ItineraryDetails) {
+            if (!empty($itinerary)) {
                 $this->itineraryDetails[] = new ItineraryDetails($itinerary);
             }
         }
